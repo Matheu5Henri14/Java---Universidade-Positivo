@@ -42,7 +42,15 @@ class Carrinho {
         for (Produto p : produtos) {
             System.out.println(p.nome + " - R$ " + p.preco);
 
+            if (p instanceof ProdutoFisico) {
+                ProdutoFisico pf = (ProdutoFisico) p;
+                System.out.println("Peso " + pf.peso + "kg");
+            }
 
+            if (p instanceof ProdutoDigital) {
+                ProdutoDigital pd = (ProdutoDigital) p;
+                System.out.println("MB " + pd.tamanhoArquivoMB);
+            }
         }
     }
 
