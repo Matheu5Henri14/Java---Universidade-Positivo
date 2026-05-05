@@ -10,6 +10,7 @@ public class Produto {
     double preco;
 
     public Produto(String nome, double preco) {
+<<<<<<< HEAD
 
     }
     public String getNome(){
@@ -19,6 +20,11 @@ public class Produto {
     public double getPreco() {
         return preco;
     }
+=======
+        this.nome = nome;
+        this.preco = preco;
+    }ty
+>>>>>>> b67f21d15b9b055dd3ad217be9fc6e1ca35f3caa
 }
 
 class ProdutoFisico extends Produto {
