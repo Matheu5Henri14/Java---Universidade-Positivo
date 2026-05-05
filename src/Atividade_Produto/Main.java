@@ -1,7 +1,17 @@
 package Atividade_Produto;
 
+import E_Commerce.Cliente;
+
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Digite o nome do cliente: ");
+        String nomeCliente = sc.nextLine();
+        Cliente cliente = new Cliente(nomeCliente);
+
         ProdutoFisico p3 = new ProdutoFisico("Monitor", 1200, 3.0);
         ProdutoDigital p4 = new ProdutoDigital("GTA V", 200, 80000);
 

@@ -1,14 +1,23 @@
 package Atividade_Produto;
 
+import E_Commerce.Cliente;
+
 import java.util.ArrayList;
+
 
 public class Produto {
     String nome;
     double preco;
 
     public Produto(String nome, double preco) {
-        this.nome = nome;
-        this.preco = preco;
+
+    }
+    public String getNome(){
+        return nome;
+    }
+
+    public double getPreco() {
+        return preco;
     }
 }
 
@@ -27,6 +36,24 @@ class ProdutoDigital extends Produto {
     public ProdutoDigital(String nome, double preco, double tamanhoArquivoMB) {
         super(nome, preco);
         this.tamanhoArquivoMB = tamanhoArquivoMB;
+    }
+}
+
+class Pedido{
+    private Cliente cliente;
+    private Carrinho carrinho;
+
+    public Pedido(Cliente cliente, Carrinho carrinho) {
+        this.cliente = cliente;
+        this.carrinho = carrinho;
+    }
+
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public Carrinho getCarrinho() {
+        return carrinho;
     }
 }
 
